@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<score:SContext xmlns:score="http://scoreabm.org/score" label="FairnessandPDGBA" ID="fairnessandPDGBA" pluralLabel="FairnessandPDGBAs">
+  <attributes label="number of agent" ID="number of agent" pluralLabel="number of agents" sType="INTEGER" defaultValue="2000"/>
+  <attributes label="neighbor size" ID="neighbor size" pluralLabel="neighbor sizes" sType="INTEGER" defaultValue="6" units=""/>
+  <attributes label="WS probability" ID="WS probability" pluralLabel="WS probabilities" sType="FLOAT" defaultValue="0.05"/>
+  <attributes label="number of agent in one step" ID="number of agent in one step" pluralLabel="number of agent in one steps" sType="INTEGER" defaultValue="2000"/>
+  <attributes label="number of initial cooperation" ID="number of initial cooperation" pluralLabel="number of initial cooperations" sType="INTEGER" defaultValue="1000" units=""/>
+  <attributes label="initial Random Network node number" ID="initial Random Network node number" pluralLabel="initial Random Network node numbers" sType="INTEGER" defaultValue="4"/>
+  <attributes label="number of added adge each step" ID="number of added adge each step" pluralLabel="number of added adge each steps" sType="INTEGER" defaultValue="4" units=""/>
+  <attributes label="number of social preference agent" ID="number of social preference agent" pluralLabel="number of social preference agents" description="" sType="INTEGER" defaultValue="2000"/>
+  <attributes label="payoffOfCC" ID="payoffOfCC" pluralLabel="payoffOfCCs" sType="FLOAT" defaultValue="1.0"/>
+  <attributes label="payoffOfCD" ID="payoffOfCD" pluralLabel="payoffOfCDs" sType="FLOAT" defaultValue="0"/>
+  <attributes label="payoffOfDC" ID="payoffOfDC" pluralLabel="payoffOfDCs" sType="FLOAT" defaultValue="1.2"/>
+  <attributes label="payoffOfDD" ID="payoffOfDD" pluralLabel="payoffOfDDs" description="" sType="FLOAT" defaultValue="0"/>
+  <attributes label="noise" ID="noise" pluralLabel="noises" sType="FLOAT" defaultValue="8"/>
+  <attributes label="alpha of social preference function" ID="alpha of social preference function" pluralLabel="alpha of social preference functions" sType="FLOAT" defaultValue="0"/>
+  <implementation package="fairnessandpdgba" className="LivingWorld" basePath="../Fairness and PDG(BA)" mode="AUTO"/>
+  <agents label="player" ID="player" pluralLabel="players">
+    <implementation className="player" basePath="" mode="AUTO"/>
+  </agents>
+</score:SContext>
